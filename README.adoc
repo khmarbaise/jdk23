@@ -18,11 +18,11 @@
 //
 :quality-heads-up: https://inside.java/2023/07/29/quality-heads-up/
 :mockito-site: https://github.com/mockito/mockito
-= JDK 22 Features
+= JDK 23 Features
 
 Just a try.
 
-The JavaDoc of this version: https://download.java.net/java/early_access/jdk22/docs/api/
+The JavaDoc of this version: https://download.java.net/java/early_access/jdk23/docs/api/
 
 == State
 
@@ -30,8 +30,5 @@ It's just a Proof Of Concept
 
 == Requirements
 
-JDK22+
+JDK23+
 
-== POM Details
-
-* https://cr.openjdk.org/~asotona/8308754/classfile-api/javadoc/java.base/java/lang/classfile/package-summary.html
