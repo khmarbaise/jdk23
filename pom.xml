@@ -19,6 +19,8 @@
 
   <properties>
     <maven.compiler.release>23</maven.compiler.release>
+    <maven.compiler.source>23</maven.compiler.source>
+    <maven.compiler.target>23</maven.compiler.target>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -80,6 +82,7 @@
            ! Check for details in the README.adoc#Dynamic Agents
           -->
           <argLine>
+            -XX:+EnableDynamicAgentLoading
             --enable-preview
           </argLine>
         </configuration>
@@ -121,7 +124,6 @@
             </execution>
           </executions>
         </plugin>
-
       </plugins>
     </pluginManagement>
   </build>
