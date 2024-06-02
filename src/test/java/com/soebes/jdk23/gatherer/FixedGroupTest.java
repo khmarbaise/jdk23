@@ -20,10 +20,10 @@ class FixedGroupTest {
   // PECS Producer extends, Consumer super
   // Ref: https://stackoverflow.com/questions/2723397/what-is-pecs-producer-extends-consumer-super
   //                          +----------------------- The input elements
-  //                          !      +---------------- The state
-  //                          !      !           +---- Output elements
-  //                          !      !           !
-  //                          v      v           v
+  //                          !    +---------------- The state
+  //                          !    !           +---- Output elements
+  //                          !    !           !
+  //                          v    v           v
   static private <T> Gatherer<T, List<T>, List<T>> fixedGroup(int windowSize) {
     Supplier<List<T>> initializer = ArrayList::new;
     Gatherer.Integrator<List<T>, T, List<T>> integrator = (state, element, downstream) -> {
